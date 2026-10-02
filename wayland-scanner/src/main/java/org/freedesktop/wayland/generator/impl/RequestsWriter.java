@@ -139,7 +139,7 @@ public class RequestsWriter {
                     .emitJavadoc(javaDoc);
             //actual method
             javaWriter.beginMethod("void",
-                    lowerCamelName(requestName),
+                    escapeJavaKeyword(lowerCamelName(requestName)),
                     EnumSet.of(Modifier.PUBLIC),
                     args);
             javaWriter.endMethod();

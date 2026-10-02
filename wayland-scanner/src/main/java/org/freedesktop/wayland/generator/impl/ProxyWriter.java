@@ -219,7 +219,7 @@ public class ProxyWriter {
             //actual method
             final String[] argParams = args.toArray(new String[args.size()]);
             javaWriter.beginMethod(returnType,
-                    lowerCamelName(requestName),
+                    escapeJavaKeyword(lowerCamelName(requestName)),
                     EnumSet.of(Modifier.PUBLIC),
                     argParams);
 

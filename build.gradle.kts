@@ -93,7 +93,7 @@ subprojects {
         apply(plugin = "java-library")
         java {
             toolchain {
-                languageVersion.set(JavaLanguageVersion.of(22))
+                languageVersion.set(JavaLanguageVersion.of(23))
             }
         }
     }
